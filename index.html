@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电商图片提取助手 - Chrome插件</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .hero {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 48px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px 24px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #1677ff;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .install-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .install-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .install-section ol {
+            padding-left: 24px;
+            line-height: 2;
+            color: #444;
+        }
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-top: 48px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>电商图片提取助手</h1>
+            <p>一键提取淘宝、京东、拼多多商品详情页图片，支持批量下载为PNG格式</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>多平台支持</h3>
+                <p>完美适配淘宝、天猫、京东、拼多多商家版等主流电商平台商品详情页。</p>
+            </div>
+            <div class="feature-card">
+                <h3>智能过滤</h3>
+                <p>自动过滤图标、小于100×100的小图，自动去重，只保留有效商品图片。</p>
+            </div>
+            <div class="feature-card">
+                <h3>批量下载</h3>
+                <p>网格展示提取结果，支持全选、反选，一键批量下载并统一转为PNG格式。</p>
+            </div>
+        </div>
+
+        <div class="install-section">
+            <h2>安装使用方法</h2>
+            <ol>
+                <li>下载本仓库完整代码到本地</li>
+                <li>打开 Chrome 浏览器，地址栏输入 chrome://extensions</li>
+                <li>开启右上角「开发者模式」</li>
+                <li>点击「加载已解压的扩展程序」，选中本项目文件夹</li>
+                <li>打开电商商品详情页，点击右上角「获取图片」按钮即可使用</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>基于 Chrome Manifest V3 开发 | 开源项目</p>
+        </div>
+    </div>
+</body>
+</html>
