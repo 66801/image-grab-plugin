@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "电商图片提取助手",
+    "version": "1.0.0",
+    "description": "一键提取淘宝、京东、拼多多商品详情页图片，支持批量下载为PNG格式",
+    "permissions": ["activeTab", "downloads", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["gallery.html", "gallery.js", "gallery.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  

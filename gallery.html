@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片提取结果</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>图片提取结果</h1>
+      <div class="toolbar">
+        <button id="selectAll">全选</button>
+        <button id="invertSelect">反选</button>
+        <span class="count">已选 <span id="selectedCount">0</span> / <span id="totalCount">0</span> 张</span>
+        <button id="downloadBtn" class="primary">下载选中</button>
+      </div>
+    </header>
+    <div id="imageGrid" class="image-grid">
+      <div class="empty">加载中...</div>
+    </div>
+  </div>
+  <script src="gallery.js"></script>
+</body>
+</html>
